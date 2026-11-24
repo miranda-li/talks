@@ -1,29 +1,17 @@
 # Talks
 
-Slide decks made with reveal.js. Each folder is one talk.
+Slides for my talks, made with [reveal.js](https://revealjs.com). Each folder is one talk.
 
-## Making a new talk
+## New talk
 
-1. Copy the `template` folder and rename the copy, e.g. `2027-03-ccr-seminar`
-   (year-month-short-name keeps them in order; no spaces).
-2. Edit the new folder's `index.html`: each `<section>` is one slide, written in Markdown.
-3. To add a slide, copy a whole `<section>` block. Colors and fonts are in `theme.css`.
-4. Add the talk to the list in the top-level `index.html`.
-5. Commit and push in GitHub Desktop.
+Copy `template/` and name the copy by date, like `2027-03-ccr-seminar`. Each `<section>` in its `index.html` is a slide, written in Markdown. Then add the talk to the list in the main `index.html` and push.
 
-Live at: `https://YOUR-USERNAME.github.io/talks/FOLDER-NAME/`
+Talks go live at `https://miranda-li.github.io/talks/folder-name/`.
 
 ## Presenting
 
-| Key | Does |
-|---|---|
-| → / Space | Next slide |
-| ← | Previous slide |
-| F | Fullscreen |
-| S | Speaker view (notes, timer, next slide) |
-| Esc / O | Overview of all slides |
+Arrow keys or space to move between slides, F for fullscreen, S for speaker notes, Esc to see all slides.
 
-## Saving as PDF
+## PDF
 
-Add `?print-pdf` to the link (e.g. `.../2027-03-ccr-seminar/?print-pdf`), open it in Chrome,
-then Print → Save as PDF, Layout: Landscape, Margins: None, Background graphics: on.
+Add `?print-pdf` to the end of the link, open it in Chrome and print to PDF (landscape, no margins, background graphics on).
