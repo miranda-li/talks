@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Change the browser-tab title for each talk -->
+  <title>Talk Title · Miranda J. Li</title>
+
+  <!-- reveal.js and the font, loaded from the internet (nothing to install) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <!-- Colors and fonts: edit theme.css -->
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+  <!--
+    Each <section> ... </section> is one slide, written in Markdown.
+    To add a slide, copy a whole <section> block.
+    "Note:" starts speaker notes (only you see them: press S while presenting).
+  -->
+
+  <section data-markdown>
+    <textarea data-template>
+      # Talk Title Goes Here
+
+      Miranda J. Li · Event name · Month 2026
+
+      Note:
+      Speaker notes go here.
+    </textarea>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+      ## Slide heading
+
+      - First point
+      - Second point
+      - Third point
+    </textarea>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+      > A quotation goes here.
+
+      — Source, year
+    </textarea>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+      # Thank you
+
+      mirandajli@student.ubc.ca · mirandajli.com
+    </textarea>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/notes.js"></script>
+<script>
+  // Small UBC logo in the top-right corner of every slide.
+  // To change its size, edit "auto 50px" (50px = height).
+  document.querySelectorAll(".slides > section").forEach(function (slide) {
+    slide.dataset.backgroundImage = "ubc-logo.png";
+    slide.dataset.backgroundSize = "auto 50px";
+    slide.dataset.backgroundPosition = "right 28px top 24px";
+    slide.dataset.backgroundColor = "#fff";
+  });
+
+  Reveal.initialize({
+    hash: true,          // each slide gets its own link (#/3)
+    slideNumber: "c/t",  // shows "3/4" in the corner
+    controls: false,     // no arrow buttons (use arrow keys / click)
+    progress: false,     // no progress bar along the bottom
+    transition: "none",
+    plugins: [ RevealMarkdown, RevealNotes ]
+  });
+</script>
+</body>
+</html>

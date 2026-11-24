@@ -1,0 +1,44 @@
+/* =========================================================
+   Slide style: white background, one font, matches mirandajli.com.
+   Change a value here and every slide updates.
+   ========================================================= */
+:root {
+  --font: "Source Serif 4", Georgia, serif;
+  --ink: #1f2a24;      /* text */
+  --muted: #6b7770;    /* small grey text */
+  --accent: #2c5f2d;   /* links */
+}
+
+.reveal-viewport { background: #fff; }
+.reveal {
+  font-family: var(--font);
+  font-size: 34px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.reveal .slides section { text-align: left; }
+
+.reveal h1, .reveal h2 {
+  font-family: var(--font); font-weight: 600; line-height: 1.2;
+  color: var(--ink); margin: 0 0 .8em;
+}
+.reveal h1 { font-size: 2em; }
+.reveal h2 { font-size: 1.3em; }
+.reveal p { margin: 0 0 .6em; }
+.reveal h1 + p { color: var(--muted); font-size: .7em; }
+
+.reveal ul, .reveal ol { margin: 0 0 0 1.1em; }
+.reveal li { margin-bottom: .4em; }
+.reveal a { color: var(--accent); }
+
+.reveal blockquote {
+  margin: 0 0 .6em; padding: 0; font-style: italic; font-size: 1.2em;
+}
+.reveal blockquote + p { color: var(--muted); font-size: .7em; }
+
+.reveal .slide-number {
+  background: none; color: var(--muted); font: 14px var(--font);
+  right: 20px; bottom: 16px;
+}
+.reveal .slide-number a,
+.reveal .slide-number span { font-family: var(--font); color: inherit; text-decoration: none; }
